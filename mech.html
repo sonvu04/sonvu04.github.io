@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title> Nikuma Ekarito </title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel = "icon" href = "Ava.png" type = "image/x-icon">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  <script> 
+    function myFunction(){
+         var x = document.getElementById("box");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } 
+        else {
+            x.style.display = "none";
+        }
+        
+    }
+      function shit(){
+         var x = document.getElementById("box1");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } 
+        else {
+            x.style.display = "none";
+        }
+    }
+  </script>
+  <style>
+ body, html { 
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:black;
+  scroll-behavior: smooth;
+  
+}
+h1, h2, h3, h4{font-family: "Courier New", monospace;}
+{
+  box-sizing: border-box;
+}
+.footer-basic {
+  padding:40px 0;
+  background-color:#000000;
+  color:#FFFFFF;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+  
+}
+
+
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+.bgtext {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+.fa {
+  padding: 20px;
+  font-size: 36px;
+  width: 36px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 10px;
+	font-family: "Roboto Cn", sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: #eee;
+}
+
+header{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url("https://wallpaper.dog/large/17100340.png") center no-repeat;
+	background-size: cover;
+	position: relative;
+  overflow: hidden;
+}
+
+.container{
+	max-width: 120rem;
+	width: 90%;
+	margin: 0 auto;
+}
+.menu-toggle{
+	position: fixed;
+	top: 2.5rem;
+	right: 2.5rem;
+	color: #eeeeee;
+	font-size: 3rem;
+	cursor: pointer;
+	z-index: 1000;
+	display: none;
+}
+
+nav{
+	padding-top: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+}
+
+.brand{
+	font-size: 1rem;
+	font-weight: 300;
+	transform: translateX(-100rem);
+	animation: slideIn .5s forwards;
+}
+
+.brand span{
+	color: crimson;
+}
+
+nav ul{
+	display: flex;
+}
+
+nav ul li{
+	list-style: none;
+	transform: translateX(100rem);
+	animation: slideIn .5s forwards;
+}
+
+nav ul li:nth-child(1){
+	animation-delay: 0s;
+}
+
+nav ul li:nth-child(2){
+	animation-delay: .5s;
+}
+
+nav ul li:nth-child(3){
+	animation-delay: 1s;
+}
+
+nav ul li:nth-child(4){
+	animation-delay: 1.5s;
+}
+
+nav ul li a{
+	padding: 1rem 0;
+	margin: 0 3rem;
+	position: relative;
+	letter-spacing: 2px;
+}
+
+nav ul li a:last-child{
+	margin-right: 0;
+}
+
+nav ul li a::before,
+nav ul li a::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: crimson;
+	left: 0;
+	transform: scaleX(0);
+	transition: all .5s;
+}
+
+nav ul li a::before{
+	top: 0;
+	transform-origin: left;
+}
+
+nav ul li a::after{
+	bottom: 0;
+	transform-origin: right;
+}
+
+.overlay{
+	background-color: rgba(0,0,0,.95);
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	transition: opacity 650ms;
+	transform: scale(0);
+	opacity: 0;
+  display: none;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+	transform: scaleX(1);
+}
+
+@keyframes slideIn {
+	from{
+
+	}
+	to{
+		transform: translateX(0);
+	}
+}
+
+@media screen and (max-width: 700px){
+
+	.menu-toggle{
+		display: block;
+	}
+
+	nav{
+		padding-top: 0;
+		display: none;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		height: 100vh;
+		text-align: center;
+	}
+
+	nav ul{
+		flex-direction: column;
+	}
+
+	nav ul li{
+		margin-top: 1rem;
+	}
+
+	nav ul li a{
+		margin: 0;
+		font-size: 1rem;
+	}
+
+  
+  .overlay.menu-open,
+  nav.menu-open{
+	  display: flex;
+	  transform: scale(1);
+	  opacity: 1;
+  }
+  
+}
+div.box{
+    text-align: center;
+}
+.responsive {
+  width: 50%;
+  height: auto;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1{
+  background-color: #ffffff00; 
+  color: white; 
+  border: 3px solid #4CAF50;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: black;
+}
+
+
+.button2 {
+  background-color: #ffffff00; 
+  color: white; 
+  border: 3px solid #f44336;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.button2:hover {
+  background-color: #f44336;
+  color: black;
+}
+
+.button3 {
+  background-color: #ffffff00; 
+  color: white; 
+  border: 3px solid #0066ff;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.button3:hover {
+  background-color: #0066ff;
+  color: black;
+}
+.button4 {
+  background-color: #ffffff00; 
+  color: white; 
+  border: 3px solid yellow;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.button4:hover {
+  background-color: yellow;
+  color: black;
+}
+.wy {
+ width: 80%;
+ max-width: 640px;
+ margin: 0 auto;
+ }
+.youtube {
+ position:relative;
+ padding-bottom:56.25%;
+ padding-top:30px;
+ height:0;
+ overflow:hidden;
+ }
+
+.youtube iframe, .youtube object, .youtube embed {
+ position:absolute;
+ top:0;
+ left:0;
+ width:100%;
+ height:100%;
+ }
+ 
+</style>
+</head>
+
+<body>
+    
+<header> 
+<div class="menu-toggle" id="hamburger" onclick="myFunction()" >
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="overlay"></div>
+        <div class="container">
+            <nav>
+                <h1 class="brand"><a href="index.html"><img src="Ava.png" width="36" height="36"></a></h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gear.html" >Gears</a></li>
+                    <li><a href="stuff.html">Stuff</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="wy">
+        <div class="youtube">
+        <iframe width="560" height="315" style="margin-top:7%; margin-bottom:7%;" src="https://www.youtube.com/embed/X5YlBeuY9Qk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+<div class="box"  style="margin-top:5%; margin-bottom:5%;">
+            <button class="button button1"><a href="mech.html#Keyboard1">XDA POKEMON</a></button>
+            <button class="button button2"><a href="mech.html#Keyboard2">STICKER BOMB</a></button>
+            <button class="button button3"><a href="mech.html#Keyboard3">AHEGAO</a></button>
+            <button class="button button4"><a href="mech.html#Keyboard4">PRICE</a></button>
+        </div>
+<img style=" position:absolute; bottom: 0; right:0; position: fixed; margin-right:10px; margin-bottom:30px;" src="luffy.gif"  width="200px" height="auto" id="box1" onclick="shit()" >
+</header>
+<div id='Keyboard1'>
+           <div class="box" style="color:white">
+               <img src="mech1.png" class="responsive" style="margin-top:5%; margin-bottom:2%;">
+               <h3  class=" w3-container" style="font-size:30px;">XDA POKEMON ROYAL KLUDGE RK84</h3>
+           </div>
+        </div>
+<div id='Keyboard2'>
+           <div class="box" style="color:white">
+               <img src="mech2.png" class="responsive" style="margin-top:5%; margin-bottom:2%;">
+               <h3  class=" w3-container" style="font-size:30px;">STICKER BOMB ROYAL KLUDGE RK84</h3>
+           </div>
+        </div>
+        <div id='Keyboard3'>
+           <div class="box" style="color:white">
+               <img src="mech3.png" class="responsive" style="margin-top:5%; margin-bottom:2%;">
+               <h3  class=" w3-container" style="font-size:30px;">AHEGAO ROYAL KLUDGE RK84</h3>
+           </div>
+        </div>
+<div id='Keyboard4'>
+           <div class="box" style="color:white">
+               <img src="mech4.png" class="responsive" style="margin-top:5%; margin-bottom:2%;">
+               <h3  class=" w3-container" style="font-size:30px; margin-bottom:5%">PRICE</h3>
+           </div>
+        </div>
+<script src="bruh.js"></script>
+
+
+<div class="footer-basic">
+        <footer>
+            <div class="social" ><a href="https://www.facebook.com/sonvu04/" target="_blank" class="fa fa-facebook-square" style="color:white; font-size:36px;"></a><a href="https://www.youtube.com/channel/UCNrgPyfhUzqNLcDHHzG1xyw" target="_blank" class="fa fa-youtube-play" style="color:white; font-size:36px;"></a>
+<a href="https://www.instagram.com/vu_kuma/" target="_blank" class="fa fa-instagram" style="color:white; font-size:36px;"></a>
+<a href="https://open.spotify.com/user/xxxh8pkafrsw3ffl4y6a8pz1n" target="_blank" class="fa fa-spotify" style="font-size:36px; color:white"></a>
+<a href="https://steamcommunity.com/id/sonvu04" target="_blank" class="fa fa-steam" style="font-size:36px; color:white"></a>
+<a href="https://paypal.me/sonvu04?locale.x=vi_VN" target="_blank" class="fa fa-paypal" style="font-size:36px; color:white"></a>
+<a href="https://discord.com/api/oauth2/authorize?client_id=789847201915731990&permissions=0&scope=bot" target="_blank" class="fa fa-wrench" style="font-size:36px; color:white"></a>
+</div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="gear.html">Gears</a></li>
+                <li class="list-inline-item"><a href="stuff.html">Stuff</a></li>
+                <li class="list-inline-item"><a href="about.html">About</a></li>
+            </ul>
+            <p class="copyright">Copyright © 2021 by Nikuma Ekarito</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
